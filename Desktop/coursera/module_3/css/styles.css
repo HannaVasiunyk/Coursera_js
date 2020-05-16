@@ -83,10 +83,10 @@ body {
 @media (min-width: 1200px) {
   .container .jumbotron {
     background:black;
-    height: 500px;
+    height: 1550px;
 	text-align:justify;
 	padding: 10px;
-	
+	overflow: auto;
   }
 
 }
@@ -100,9 +100,10 @@ body {
   /* Home Page */
   .container .jumbotron {
     background: black;
-    height: 558px;
+    height: 1550px;
 	text-align:justify;
 	padding: 10px;
+	overflow: auto;
 	
   }
   
@@ -117,7 +118,7 @@ body {
   /* Home Page */
   .container .jumbotron {
     background: black;
-    height: 700px;
+    height: 1000px;
 	text-align:justify;
 	padding: 10px;
 	overflow: auto;
@@ -135,7 +136,7 @@ body {
   /* Header */
   .container .jumbotron {
     background: black;
-    height: 800px;
+    height: 900px;
 	text-align:justify;
 	overflow: auto;
 	padding: 10px;
