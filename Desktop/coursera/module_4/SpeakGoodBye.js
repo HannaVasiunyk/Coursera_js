@@ -10,7 +10,7 @@
 // See Lecture 52, part 1
 var byeSpeaker  = {};
 
-byeSpeaker.name = "Jullia";
+
 
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.
 var speakWord = "Good Bye";
@@ -22,10 +22,11 @@ var speakWord = "Good Bye";
  // console.log(speakWord + " " + name);
 //}
 
-byeSpeaker.speak = function() {
-console.log(speakWord +" " + byeSpeaker.name);
-}
 
+
+byeSpeaker.speak = function (name) {
+  console.log(speakWord + " " + name);
+}
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
 // 'byeSpeaker' on the global scope as well.
 // xxxx.xxxx = byeSpeaker;
