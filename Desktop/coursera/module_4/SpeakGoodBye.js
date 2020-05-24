@@ -10,7 +10,7 @@
 // See Lecture 52, part 1
 var byeSpeaker  = {};
 
-//byeSpeaker.name = "jullia";
+byeSpeaker.name = "Jullia";
 
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.
 var speakWord = "Good Bye";
