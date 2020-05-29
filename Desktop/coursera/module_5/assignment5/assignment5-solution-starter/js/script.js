@@ -102,29 +102,21 @@ $ajaxUtils.sendGetRequest(
 // Builds HTML for the home page based on categories array
 // returned from the server.
 
+
 function buildAndShowHomeHTML (categories) {
-  // Load title snippet of categories page
+
+  // Load home snippet page
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
-      // Retrieve single category snippet
-      $ajaxUtils.sendGetRequest(
-        homeHtml,
-        function (homeHtml) {
-          // Switch CSS class active to menu button
-          switchMenuToActive();
-
-          var   homeHtmlUrl, =
-            buildCategoriesViewHtml(categories,
-                                    homeHtmlUrl,
-                                    homeHtml);
-          insertHtml("#main-content",   homeHtmlUrl,);
-        },
-        false);
-    },
-    false);
-}
-
+    	var chosenCategoryShortName =	chooseRandomCategory(categories).short_name;
+      // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
+      // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
+      // variable's name implies it expects.
+      // var chosenCategoryShortName = ....
+      var chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
+    var homeHtmlToInsertIntoMainPage =insertProperty(homeHtml,"randomCategoryShortName",chosenCategoryShortName);
+   insertHtml("#main-content",homeHtmlToInsertIntoMainPage);
 //function buildAndShowHomeHTML (categories) {
 
   // Load home snippet page
@@ -157,8 +149,8 @@ function buildAndShowHomeHTML (categories) {
       // of how to do that.
       // ....
 
-   // },
-   // false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
+    },
+   false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
 
 
