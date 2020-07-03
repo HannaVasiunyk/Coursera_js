@@ -1,0 +1,20 @@
+{
+  "name": "coursera_react",
+  "version": "1.0.0",
+  "description": "This is test version",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/HannaVasiunyk/React.git)"
+  },
+  "author": "Hanna",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
